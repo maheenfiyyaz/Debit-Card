@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+}
+
+.container {
+    min-height: 100vh;
+    background: linear-gradient(45deg, olive,#3b5323);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container form {
+    background: #eee;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 600px;
+    margin-top: 0%;
+}
+
+.inputbox {
+    margin-top: 20px;
+}
+
+.inputbox span {
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+}
+
+.inputbox input,
+.inputbox select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: #444;
+}
+
+.flexbox {
+    display: flex;
+    gap: 15px;
+}
+
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(45deg, olive,#3b5323);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+    letter-spacing: 2px;
+    opacity: .8;
+    
+}
+
+.card-container {
+    position: relative;
+    width: 450px;
+    height: 260px;
+    margin-top: 50px;
+    perspective: 1000px;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    transition: transform 0.6s ease;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.front {
+    background: linear-gradient(45deg,#3b5323, rgb(115, 128, 0));
+}
+
+.back {
+    background: linear-gradient(45deg,#3b5323, rgb(115, 128, 0));
+    transform: rotateY(180deg);
+    text-align: right;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.card-number-box {
+    padding: 30px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.flexbox .box span {
+    font-size: 15px;
+    color: #fff;
+}
+.box2{
+    margin-left: 200px;
+}
+.back .stripe {
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;}
+
+.cvv-box {
+    background: #fff;
+    color: #444;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 400px;
+    margin-top: 5px;
+}
